@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/txtUser01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuário 01"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/txtMensagemEnviada"
@@ -27,20 +33,192 @@
         android:id="@+id/txtQtdMensagens01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Informe a quantidade de mensagem para enviar ao usuário 2" />
+        android:text="Informe a quantidade de mensagens a serem enviadas para o usuário 2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnEnviarUser01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar mensagem para usuário 2" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtMensagemRecebidaUsuario02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensagens recebida usuário 02" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/edtMensagemRecebidaUsuario02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
-        android:text="0" />
+        android:inputType="textPersonName"
+        android:text="Texto de msg recebida" />
 
-    <Button
-        android:id="@+id/btnEnviarUser01"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtQtdTempoEnviomsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo envio mensagens: " />
+
+        <TextView
+            android:id="@+id/txtQtdTempoEnvio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/txtQtdTempoRecebmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Tempo receber mensagens: " />
+
+        <TextView
+            android:id="@+id/txtQtdTempoRecMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000" />
+
+
+    </LinearLayout>
+
+!--aqui
+
+    <TextView
+        android:id="@+id/txtSpace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar mensagem para usuário 2" />
+        android:text="    "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtUser02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuário 02"
+        android:textSize="30sp" />
+
+
+
+    <TextView
+        android:id="@+id/txtMensagemEnviadaUser02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite a mensagem para ser enviada para o usuário 01" />
+
+    <EditText
+        android:id="@+id/edtMensagemUser02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:text="Texto de exemplo" />
+
+    <TextView
+        android:id="@+id/txtQtdMensagens02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informe a quantidade de mensagens a serem enviadas para o usuário 1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName31"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnEnviarUser02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar mensagem para usuário 1" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtMensagemRecebidaUsuario01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensagens recebida usuário 01" />
+
+    <EditText
+        android:id="@+id/edtMensagemRecebidaUsuario01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Texto de msg recebida" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtQtdTempoEnviomsgUser02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo envio mensagens: " />
+
+        <TextView
+            android:id="@+id/txtQtdTempoEnvioUser02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/txtQtdTempoRecebmsgUser01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Tempo receber mensagens: " />
+
+        <TextView
+            android:id="@+id/txtQtdTempoRecMsgUser01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000" />
+
+
+    </LinearLayout>
+
+
+
+
+
 
 </LinearLayout>
