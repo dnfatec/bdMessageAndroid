@@ -15,25 +15,10 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/txtMensagemEnviada"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Digite a mensagem para ser enviada" />
-
-    <EditText
-        android:id="@+id/edtMensagemUser01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-
-        android:inputType="textPersonName"
-        android:text="Texto de exemplo" />
-
-    <TextView
         android:id="@+id/txtQtdMensagens01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Informe a quantidade de mensagens a serem enviadas para o usuário 2" />
+        android:text="Qtd. de caracteres a serem enviadas para o usuário 2" />
 
 
     <LinearLayout
@@ -42,7 +27,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/edtQtdCarEnviarUsuario2"
             android:layout_width="91dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -106,7 +91,6 @@
 
     </LinearLayout>
 
-!--aqui
 
     <TextView
         android:id="@+id/txtSpace"
@@ -123,27 +107,11 @@
         android:textSize="30sp" />
 
 
-
-    <TextView
-        android:id="@+id/txtMensagemEnviadaUser02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Digite a mensagem para ser enviada para o usuário 01" />
-
-    <EditText
-        android:id="@+id/edtMensagemUser02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-
-        android:inputType="textPersonName"
-        android:text="Texto de exemplo" />
-
     <TextView
         android:id="@+id/txtQtdMensagens02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Informe a quantidade de mensagens a serem enviadas para o usuário 1" />
+        android:text="Qtd. de caracteres a serem enviadas para o usuário 1" />
 
 
     <LinearLayout
@@ -152,7 +120,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextTextPersonName31"
+            android:id="@+id/edtQtdCarEnviarUsuario1"
             android:layout_width="91dp"
             android:layout_height="wrap_content"
             android:ems="10"
