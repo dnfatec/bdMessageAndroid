@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63567119281",
+    "project_id": "exmessagebdmestre",
+    "storage_bucket": "exmessagebdmestre.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63567119281:android:b2cc5f97e95d91b515f390",
+        "android_client_info": {
+          "package_name": "com.example.exmessagebdmestre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63567119281-nq6q4ddhpbisetjtl9hesjuieclrsh1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjqdhZiIlqh-ADtkhJ0TsJKkOvh6W0_Rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63567119281-nq6q4ddhpbisetjtl9hesjuieclrsh1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

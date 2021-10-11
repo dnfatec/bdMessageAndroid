@@ -1,192 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtUser01"
-        android:layout_width="match_parent"
+        android:id="@+id/txtLabelUser"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuário 01"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/txtQtdMensagens01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Qtd. de caracteres a serem enviadas para o usuário 2" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/edtQtdCarEnviarUsuario2"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:text="0" />
-
-        <Button
-            android:id="@+id/btnEnviarUser01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enviar mensagem para usuário 2" />
-
-    </LinearLayout>
-
-
-
-    <TextView
-        android:id="@+id/txtMensagemRecebidaUsuario02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mensagens recebida usuário 02" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Informe seu nome:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/edtMensagemRecebidaUsuario02"
+        android:id="@+id/edtUser"
+        android:layout_below="@+id/txtLabelUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Texto de msg recebida" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="37dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/txtQtdTempoEnviomsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tempo envio mensagens: " />
-
-        <TextView
-            android:id="@+id/txtQtdTempoEnvio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="000" />
-
-        <TextView
-            android:id="@+id/txtQtdTempoRecebmsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="    Tempo receber mensagens: " />
-
-        <TextView
-            android:id="@+id/txtQtdTempoRecMsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="000" />
-
-
-    </LinearLayout>
-
+        android:text="Fatec" />
 
     <TextView
-        android:id="@+id/txtSpace"
-        android:layout_width="match_parent"
+        android:id="@+id/txtLabelFriend"
+        android:layout_below="@+id/edtUser"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="    "
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/txtUser02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Usuário 02"
-        android:textSize="30sp" />
-
-
-    <TextView
-        android:id="@+id/txtQtdMensagens02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Qtd. de caracteres a serem enviadas para o usuário 1" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/edtQtdCarEnviarUsuario1"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:text="0" />
-
-        <Button
-            android:id="@+id/btnEnviarUser02"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enviar mensagem para usuário 1" />
-
-    </LinearLayout>
-
-
-
-    <TextView
-        android:id="@+id/txtMensagemRecebidaUsuario01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mensagens recebida usuário 01" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Informe o nome do seu amigo:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/edtMensagemRecebidaUsuario01"
+        android:id="@+id/edtFriend"
+        android:layout_below="@+id/txtLabelFriend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Texto de msg recebida" />
+        android:text="IIES" />
 
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/txtLabelMensagensRecebidas"
+        android:layout_below="@+id/edtFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Mensagens recebidas"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtMsgRecebidas"
         android:layout_width="match_parent"
-        android:layout_height="37dp"
-        android:orientation="horizontal">
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtLabelMensagensRecebidas"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
 
-        <TextView
-            android:id="@+id/txtQtdTempoEnviomsgUser02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tempo envio mensagens: " />
-
-        <TextView
-            android:id="@+id/txtQtdTempoEnvioUser02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="000" />
-
-        <TextView
-            android:id="@+id/txtQtdTempoRecebmsgUser01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="    Tempo receber mensagens: " />
-
-        <TextView
-            android:id="@+id/txtQtdTempoRecMsgUser01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="000" />
+    <TextView
+        android:id="@+id/txtqtdMsgEnviar"
+        android:layout_below="@+id/txtMsgRecebidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Qtd. mensagens enviar"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/edtQtdMsgEnviar"
+        android:layout_below="@+id/txtqtdMsgEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/txtMsgEnviar"
+        android:layout_below="@+id/edtQtdMsgEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Digite o texto"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtMsgEnviar"
+        android:layout_below="@+id/txtMsgEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:maxLength="100"
+        android:text="0i mundo" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_below="@+id/edtMsgEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Send msg" />
 
 
+    <Button
+        android:id="@+id/btnReceber"
+        android:layout_below="@+id/edtMsgEnviar"
+        android:layout_alignRight="@id/btnEnviar"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Receive msg" />
 
 
+    <TextView
+        android:id="@+id/txtQtdMensagensEnviadas"
+        android:layout_below="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Qtd. mensagens enviadas: 000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-
-</LinearLayout>
+    <TextView
+        android:id="@+id/txtQtdMensagensRecebidas"
+        android:layout_below="@+id/txtQtdMensagensEnviadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Qtd. mensagens recebidas: 000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
